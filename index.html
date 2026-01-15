@@ -442,7 +442,25 @@ body.dark-mode .default-city-card {
     background: linear-gradient(to right, #667eea, #764ba2);
     border-radius: 2px;
 }
-    </style>
+/* Add this to your existing CSS */
+#city-input {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+#search-btn {
+    flex-shrink: 0;
+    min-width: fit-content;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    #search-btn {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+</style>
 </head>
 <body class="dark-mode">
     <!-- Theme Toggle -->
